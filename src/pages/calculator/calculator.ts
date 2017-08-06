@@ -8,13 +8,13 @@ import { BmiCalculator } from '../../providers/bmi-calculator';
 export class Calculator {
   height: number;
   weight: number;
+  person: any;
 
   constructor(private calculatorProvider: BmiCalculator) {
   }
 
   doCalculateBmi(){
     let personObject = { weight: this.weight, height: this.height }
-    personObject = this.calculatorProvider.calculateBmiMetric(personObject)
-    console.log(personObject)
+    this.person = this.calculatorProvider.calculateBmiMetric(personObject)
   }
 }

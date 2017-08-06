@@ -16,13 +16,24 @@
 <ion-content padding>
 
   <ion-item>
-    <ion-input type="number" placeholder="Weight" [(ngModel)]="weight"></ion-input>
+    <ion-input type="number" placeholder="Weight in kg" [(ngModel)]="weight"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input type="number" placeholder="Height" [(ngModel)]="height"></ion-input>
+    <ion-input type="number" placeholder="Height in cm" [(ngModel)]="height"></ion-input>
   </ion-item>
 
   <button (click)="doCalculateBmi()" ion-button>Calculate</button>
-
+  <div *ngIf="person">
+    <ion-card>
+      <ion-card-header>
+        BMI Calculation
+      </ion-card-header>
+      <ion-card-content>
+        <p>Person: Weight {{person.weight}} kg, Height {{person.height}} cm</p>
+        <p>BMI: {{person.bmiValue}}</p>
+        <p><strong>You are {{person.bmiMessage}}</strong></p>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
