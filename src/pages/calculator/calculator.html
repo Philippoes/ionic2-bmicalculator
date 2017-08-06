@@ -15,4 +15,14 @@
 
 <ion-content padding>
 
+  <ion-item>
+    <ion-input type="number" placeholder="Weight" [(ngModel)]="weight"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="number" placeholder="Height" [(ngModel)]="height"></ion-input>
+  </ion-item>
+
+  <button (click)="doCalculateBmi()" ion-button>Calculate</button>
+
 </ion-content>

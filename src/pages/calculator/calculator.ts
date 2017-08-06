@@ -5,12 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: 'calculator.html',
 })
 export class Calculator {
+  height: number;
+  weight: number;
 
   constructor() {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Calculator');
-  }
+  doCalculateBmi(){
 
+  }
 }
