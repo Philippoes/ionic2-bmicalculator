@@ -8,6 +8,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
 import { Calculator } from '../pages/calculator/calculator'
 
+import { BmiCalculator } from '../providers/bmi-calculator'
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -32,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Calculator
   ],
   providers: [
+    BmiCalculator,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
