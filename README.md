@@ -237,12 +237,12 @@ Navigate to that provider and remove
 
 ``` src/providers/calculator.ts ```
 
-``` import { Http } from '@angular/http';
-import 'rxjs/add/operator/map'; ```
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 from the imports and
 
-``` public http: Http ```
+public http: Http
 
 from the constructor,
 
