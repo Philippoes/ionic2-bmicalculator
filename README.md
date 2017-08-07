@@ -28,7 +28,7 @@ You should also create a new repository on GitHub and add it as a remote. *Git 
 
 In your terminal run the following command to start a local server and run the application
 
-```$ ionic serve --lab ```
+``` $ ionic serve --lab ```
 
 A browser window will open and you'll be presented with a view of both the iOS and the Android version of the application. Pretty cool, right?
 
@@ -193,11 +193,12 @@ export class Calculator {
 ....
 ```
 
-We are also going to add a new method called ```doCalculateBmi()```
+We are also going to add a new method called ``` doCalculateBmi() ```
 
 your controller should look like this when you are done.
 
 ``` src/pages/calculator/calculator.ts ```
+
 ```
 import { Component } from '@angular/core';
 
@@ -226,7 +227,7 @@ The first thing you are going to do is to create a new provider. A provider play
 
 Start by running this in your terminal:
 
-```$ ionic g provider bmiCalculator```
+``` $ ionic g provider bmiCalculator ```
 
 this generates a provider in your provider folder called BmiCalculator.
 
