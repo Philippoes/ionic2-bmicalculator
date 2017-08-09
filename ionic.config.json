@@ -1,6 +1,5 @@
 {
   "name": "bmi_calculator",
-  "app_id": "",
-  "v2": true,
-  "typescript": true
+  "app_id": "27504ac8",
+  "type": "ionic-angular"
 }
